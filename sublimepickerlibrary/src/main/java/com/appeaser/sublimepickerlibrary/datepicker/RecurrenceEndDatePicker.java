@@ -9,8 +9,6 @@ import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.text.format.DateUtils;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -27,6 +25,9 @@ import com.appeaser.sublimepickerlibrary.utilities.SUtils;
 
 import java.util.Calendar;
 import java.util.Locale;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * Created by Admin on 11/03/2016.

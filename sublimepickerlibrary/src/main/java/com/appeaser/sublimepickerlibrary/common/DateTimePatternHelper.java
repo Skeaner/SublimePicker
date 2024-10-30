@@ -1,6 +1,5 @@
 package com.appeaser.sublimepickerlibrary.common;
 
-import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.appeaser.sublimepickerlibrary.datepicker.SublimeDatePicker;
@@ -10,6 +9,8 @@ import com.appeaser.sublimepickerlibrary.utilities.Config;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by Admin on 19/02/2016.

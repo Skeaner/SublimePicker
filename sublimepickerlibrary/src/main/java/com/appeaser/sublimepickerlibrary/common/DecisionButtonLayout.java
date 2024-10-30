@@ -7,7 +7,6 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -19,6 +18,8 @@ import android.widget.LinearLayout;
 
 import com.appeaser.sublimepickerlibrary.R;
 import com.appeaser.sublimepickerlibrary.utilities.SUtils;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by Admin on 11/03/2016.

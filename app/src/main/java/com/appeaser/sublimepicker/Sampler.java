@@ -20,9 +20,6 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.StyleSpan;
@@ -43,6 +40,10 @@ import com.appeaser.sublimepickerlibrary.recurrencepicker.SublimeRecurrencePicke
 
 import java.text.DateFormat;
 import java.util.Calendar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.DialogFragment;
 
 public class Sampler extends AppCompatActivity {
 

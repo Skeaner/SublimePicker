@@ -23,7 +23,6 @@ import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.util.AttributeSet;
@@ -50,6 +49,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
+
+import androidx.annotation.NonNull;
 
 /**
  * A customizable view that provisions picking of a date,

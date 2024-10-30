@@ -37,10 +37,6 @@ import android.graphics.Region;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
-import android.support.v4.widget.ExploreByTouchHelper;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
@@ -56,6 +52,11 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
+
+import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.customview.widget.ExploreByTouchHelper;
 
 /**
  * View to show a clock circle picker (with one or two picking circles)
@@ -379,7 +380,7 @@ public class RadialTimePickerView extends View {
         mPaintSelector[MINUTES][SELECTOR_LINE].setStrokeWidth(2);
 
         mPaintBackground.setColor(a.getColor(R.styleable.RadialTimePickerView_spNumbersBackgroundColor,
-                ContextCompat.getColor(context, R.color.timepicker_default_numbers_background_color_material)));
+                                             ContextCompat.getColor(context, R.color.timepicker_default_numbers_background_color_material)));
         mPaintBackground.setAntiAlias(true);
 
         mSelectorRadius = res.getDimensionPixelSize(R.dimen.sp_timepicker_selector_radius);
@@ -701,7 +702,7 @@ public class RadialTimePickerView extends View {
 
             // Exclude the selector region, then draw minutes with no
             // activated states.
-            canvas.save(Canvas.CLIP_SAVE_FLAG);
+            canvas.save();
             canvas.clipPath(mSelectorPath, Region.Op.DIFFERENCE);
             drawTextElements(canvas, mTextSize[MINUTES], mTypeface, mTextColor[MINUTES],
                     mMinutesText, mOuterTextX[MINUTES], mOuterTextY[MINUTES], mPaint[MINUTES],
@@ -710,7 +711,7 @@ public class RadialTimePickerView extends View {
 
             // Intersect the selector region, then draw minutes with only
             // activated states.
-            canvas.save(Canvas.CLIP_SAVE_FLAG);
+            canvas.save();
             canvas.clipPath(mSelectorPath, Region.Op.INTERSECT);
             drawTextElements(canvas, mTextSize[MINUTES], mTypeface, mTextColor[MINUTES],
                     mMinutesText, mOuterTextX[MINUTES], mOuterTextY[MINUTES], mPaint[MINUTES],

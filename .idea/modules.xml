@@ -3,8 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SublimePicker.iml" filepath="$PROJECT_DIR$/SublimePicker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sublimepickerlibrary/sublimepickerlibrary.iml" filepath="$PROJECT_DIR$/sublimepickerlibrary/sublimepickerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SublimePicker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SublimePicker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SublimePicker.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SublimePicker.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SublimePicker.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SublimePicker.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SublimePicker.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SublimePicker.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sublimepickerlibrary/SublimePicker.sublimepickerlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/sublimepickerlibrary/SublimePicker.sublimepickerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sublimepickerlibrary/SublimePicker.sublimepickerlibrary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sublimepickerlibrary/SublimePicker.sublimepickerlibrary.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sublimepickerlibrary/SublimePicker.sublimepickerlibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sublimepickerlibrary/SublimePicker.sublimepickerlibrary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sublimepickerlibrary/SublimePicker.sublimepickerlibrary.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sublimepickerlibrary/SublimePicker.sublimepickerlibrary.unitTest.iml" />
     </modules>
   </component>
 </project>

@@ -6,8 +6,6 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
-import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +15,9 @@ import com.appeaser.sublimepickerlibrary.R;
 import com.appeaser.sublimepickerlibrary.SublimePicker;
 import com.appeaser.sublimepickerlibrary.helpers.SublimeOptions;
 import com.appeaser.sublimepickerlibrary.utilities.SUtils;
+
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 
 /**
  * Created by Admin on 15/02/2016.
@@ -105,7 +106,7 @@ public class ButtonHandler implements View.OnClickListener {
                             SUtils.COLOR_ACCENT);
             int buttonPressedInvertedBgColor =
                     a.getColor(R.styleable.ButtonLayout_spButtonPressedInvertedBgColor,
-                            ContextCompat.getColor(context, R.color.sp_ripple_material_dark));
+                               ContextCompat.getColor(context, R.color.sp_ripple_material_dark));
             SUtils.setViewBackground(mSwitcherButtonDP,
                     SUtils.createButtonBg(context, buttonInvertedBgColor,
                             buttonPressedInvertedBgColor));

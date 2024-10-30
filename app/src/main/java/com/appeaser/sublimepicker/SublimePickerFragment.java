@@ -17,8 +17,6 @@
 package com.appeaser.sublimepicker;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +31,9 @@ import com.appeaser.sublimepickerlibrary.recurrencepicker.SublimeRecurrencePicke
 import java.text.DateFormat;
 import java.util.Locale;
 import java.util.TimeZone;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 
 public class SublimePickerFragment extends DialogFragment {
     // Date & Time formatter used for formatting
